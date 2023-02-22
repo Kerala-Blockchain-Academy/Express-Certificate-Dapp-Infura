@@ -19,7 +19,7 @@ Simple Certificate Dapp with Infura (and IPFS).
 
 ## ⚙️ Run Locally
 
-Make sure to have a reasonable amount of goerli 'test ether' on your address and an IPFS service running on port 8080.  
+Make sure to have a reasonable amount of sepolia 'test ether' on your address and an IPFS service running on port 8080.  
 
 Clone the project
 
@@ -64,10 +64,10 @@ PRIVATE_KEY=<--your private_key-->
 PROJECT_ID=<--your project_id-->
 ```
 
-Compile & migrate the contract to goerli
+Compile & migrate the contract to sepolia
 
 ```bash
-truffle migrate --network goerli
+truffle migrate --network sepolia
 ```
 
 Go back to the project directory & install dependencies

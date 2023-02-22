@@ -7,12 +7,12 @@ import deployer from './deployer.json' assert { type: 'json' };
 
 const provider = new HDWalletProvider({
   privateKeys: [process.env.PRIVATE_KEY],
-  providerOrUrl: `https://goerli.infura.io/v3/${process.env.PROJECT_ID}`
+  providerOrUrl: `https://sepolia.infura.io/v3/${process.env.PROJECT_ID}`
 });
 
 export const web3 = new Web3(provider);
 export const myContract = new web3.eth.Contract(
   Cert.abi,
-  Cert.networks['5'].address,
+  Cert.networks['11155111'].address,
 );
 export const account = deployer.from;
