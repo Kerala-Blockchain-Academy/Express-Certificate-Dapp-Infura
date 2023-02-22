@@ -1,18 +1,30 @@
 {
-  "name": "certificate-dapp-ui",
-  "version": "0.0.0",
+  "name": "express-certificate-dapp-infura",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "nodemon ./src/bin/server.js",
+    "start": "node ./src/bin/server.js",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint \"src/**/*.js\" --fix"
   },
   "dependencies": {
-    "@truffle/hdwallet-provider": "^1.7.0",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "web3": "^1.7.3"
-  }
+    "@truffle/hdwallet-provider": "^2.1.7",
+    "chalk": "^5.2.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "ipfs-http-client": "^60.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "web3": "^1.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4"
+  },
+  "type": "module"
 }
