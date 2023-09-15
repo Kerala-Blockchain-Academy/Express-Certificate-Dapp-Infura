@@ -2,7 +2,6 @@
 
 Simple Certificate Dapp with Infura (and IPFS).
 
-
 ## 🛠 Built With
 
 <div align="left">
@@ -15,7 +14,6 @@ Simple Certificate Dapp with Infura (and IPFS).
 <a href="https://ipfs.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/DEMYSTIF/DEMYSTIF/main/assets/icons/ipfs.svg" width="36" height="36" alt="IPFS" /></a>
 <a href="https://docs.infura.io/infura/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/DEMYSTIF/DEMYSTIF/main/assets/icons/infura.svg" width="36" height="36" alt="Infura" /></a>
 </div>
-
 
 ## ⚙️ Run Locally
 
@@ -61,7 +59,7 @@ truffle/.env
 
 ```bash
 PRIVATE_KEY=<--your private_key-->
-PROJECT_ID=<--your project_id-->
+PROJECT_API=<--your project_api-->
 ```
 
 Compile & migrate the contract to sepolia
@@ -88,9 +86,6 @@ Start the application
 npm run dev
 ```
 
-
 ## License
 
 Distributed under the MIT License.
-
-
