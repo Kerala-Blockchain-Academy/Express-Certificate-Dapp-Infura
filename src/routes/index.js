@@ -50,7 +50,7 @@ router.post("/issue", upload.single("document"), async function (req, res) {
       data.date,
       docHash
     )
-    .send({ from: account, gasLimit: "927000" })
+    .send({ from: account, gas: "927000" })
     .then((txn) => {
       console.log(txn);
       res.render("issueCertificate", {

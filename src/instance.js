@@ -7,7 +7,7 @@ import deployer from "./deployer.json" assert { type: "json" };
 
 const provider = new HDWalletProvider({
   privateKeys: [process.env.PRIVATE_KEY],
-  providerOrUrl: `https://sepolia.infura.io/v3/${process.env.PROJECT_ID}`,
+  providerOrUrl: process.env.PROJECT_API,
 });
 
 export const web3 = new Web3(provider);
